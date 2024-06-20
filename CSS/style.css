@@ -20,12 +20,15 @@ body {
     font-style: normal;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .container {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
+    z-index: 3;
 }
 
 .container img:last-of-type {
@@ -86,4 +89,18 @@ body {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1.4px;
+}
+
+.bg {
+    position: absolute;
+}
+
+.top {
+    top: -43%;
+    left: -22%;
+}
+
+.bottom {
+    right: -17%;
+    bottom: -60%;
 }
