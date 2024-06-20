@@ -1,0 +1,89 @@
+:root {
+    --cyan: #19a2ae;
+    --darkBlue: #2d3248;
+    --grayishBlue: #6a6f81;
+    --gray: #969696;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kumbh Sans", sans-serif;
+    font-style: normal;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container img:last-of-type {
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    /* positioning */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label {
+    margin: 0 auto 30px;
+    margin-top: calc((103.5px / 2) + 30px);
+    text-align: center;
+}
+
+.label p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--darkBlue);
+    margin-bottom: 9px;
+}
+
+.label p span {
+    margin-left: 5px;
+    color: var(--grayishBlue);
+    font-weight: 400;
+}
+
+.label > span {
+    color: var(--grayishBlue);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    border-top: 1px solid #ddd;
+}
+
+.stats p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--darkBlue);
+    text-align: center;
+}
+
+.stats p span {
+    display: block;
+    margin-top: 6px;
+    color: var(--grayishBlue);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
