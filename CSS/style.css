@@ -23,12 +23,27 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 375px) {
+    body {
+        height: auto;
+        display: block;
+        padding: 130px 0;
+    }
+}
+
 .container {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
     z-index: 3;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 350px;
+        margin: 0 auto;
+    }
 }
 
 .container img:last-of-type {
@@ -103,4 +118,15 @@ body {
 .bottom {
     right: -17%;
     bottom: -60%;
+}
+
+@media (max-width: 375px) {
+    .top {
+        top: -86%;
+        left: -202%;
+    }
+    .bottom {
+        bottom: -89%;
+        right: -197%;
+    }
 }
